@@ -1,0 +1,98 @@
+.container-fluid{
+    		background-color: #00aaff;
+    		height: 100%;
+    	}
+
+.fruitsContainer{
+    		background-color: white;
+    		height: 440px;  /*any 5 multiple + 100*(5 due to movement in setInterval and 100 due to fruit height)*/
+    		width: 1000px;  /*any multiple of 100 due to width of fruit*/
+    		margin: 9% 10%;
+    		position: relative;
+    		overflow: hidden;
+    		border-bottom-style: solid;
+    		border-bottom-color: red;
+    		border-width:thick;  
+    	}
+
+.score{
+	height: 7%;
+	width: 15%;
+	padding: 0.8%;
+	font-size: 2em;
+	margin:2% 5%;
+}    	
+
+.livesLeft{
+	height: 7%;
+	width: 10%;
+	padding: 0.8%;
+	font-size: 2em;
+	margin:2% 5%;
+} 
+
+.startGame{
+	cursor: pointer;
+	text-align: center;
+	background-color: #5CB85C;
+	height: 7%;
+	width: 40%;
+	padding: 0.4%;
+	font-size: 2em;
+	margin: -7% auto;
+	border-radius: 8px;
+
+}
+
+.pause_restart{
+	margin: -7% 0 0 33%;
+
+}
+
+.pause, .restart{
+		cursor: pointer;
+	text-align: center;
+	background-color: #5CB85C;
+	height: 7%;
+	width: 23%;
+	padding: 0.4%;
+	font-size: 2em;
+	margin-right: 5%;
+	border-radius: 5px;
+	float: left;
+}
+
+.fa-heart{
+	margin-right: 11%;
+}
+
+.fruit{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	/*top: -100px;*/
+	/*animation: move 3s linear;*/
+	/*animation-iteration-count: infinite;*/
+}
+
+@keyframes move{
+	0%{
+		top: -20%;        
+	}
+
+	100%{
+		top: 110%;        
+	}
+}
+
+.gameOverMessage{
+	color: black
+	font-weight:bold;
+	text-align: center;
+	font-size: 6em;
+
+}
+
+.gameOverMessageDiv{
+	margin-top: 13%;
+}
