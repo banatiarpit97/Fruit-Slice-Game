@@ -12,7 +12,8 @@
     		overflow: hidden;
     		border-bottom-style: solid;
     		border-bottom-color: red;
-    		border-width:thick;  
+    		border-width:thick; 
+    		 
     	}
 
 .score{
@@ -95,4 +96,10 @@
 
 .gameOverMessageDiv{
 	margin-top: 13%;
+}
+.fruitDiv{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	z-index: 2;
 }
