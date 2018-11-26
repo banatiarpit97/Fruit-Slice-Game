@@ -10,30 +10,29 @@ html, body{
     		background-color: white;
     		/* height: 440px;  any 5 multiple + 100*(5 due to movement in setInterval and 100 due to fruit height) */
     		/* width: 1000px;  any multiple of 100 due to width of fruit */
-    		margin: 9% 10%;
+    		margin:0 10%;
     		position: relative;
     		overflow: hidden;
     		border-bottom-style: solid;
     		border-bottom-color: red;
 			border-width:thick; 
 			width: 80%;
-			height: 70%;
-			margin-bottom: 30px;
+			height: 65%;
+			margin-bottom: 2%;
     	}
 
 .score{
-	height: 7%;
-	width: 15%;
-	padding: 0.8%;
+	height: 47px;
+	padding: 10px;
 	font-size: 2em;
 	margin:2% 5%;
 }    	
 
 .livesLeft{
-	height: 7%;
+	height: 47px;
 	/* width: 10%; */
 	width: 125px;
-	padding: 0.8%;
+	padding: 10px;
 	font-size: 2em;
 	margin:2% 5%;
 } 
@@ -42,9 +41,9 @@ html, body{
 	cursor: pointer;
 	text-align: center;
 	background-color: #5CB85C;
-	height: 7%;
+	height: 50px;
 	width: 40%;
-	padding: 0.4%;
+	padding: 5px;
 	font-size: 2em;
 	margin: auto;
 	border-radius: 8px;
@@ -114,4 +113,28 @@ html, body{
 	width: 100px;
 	position: absolute;
 	z-index: 2;
+}
+
+@media(max-width:1050px){
+	.pause, .restart{
+		padding: 1.2%;
+		font-size: 1.6em;
+	}
+	.fruitDiv{
+		height: 80px;
+		width: 80px;
+	}
+	.gameOverMessage {
+		font-size: 4em;
+	}
+}
+
+@media(max-width:1050px){
+	.pause, .restart{
+		padding: 2%;
+	}
+	.fruitDiv{
+		height: 70px;
+		width: 70px;
+	}
 }
